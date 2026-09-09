@@ -10,7 +10,8 @@ import adminRoutes from './server/routes/adminRoutes';
 import authRoutes from './server/routes/authRoutes';
 import contactRoutes from './server/routes/contactRoutes';
 
-const PORT = 3000;
+// const PORT = 3000;
+const PORT = Number(process.env.PORT) || 3000;
 
 async function startServer() {
   const app = express();
